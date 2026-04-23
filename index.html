@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Colores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <span class="header__logo">PALETA</span>
+      <span class="header__sub">generador de colores</span>
+    </header>
+
+    <main class="grid" id="grid">
+      
+    </main>
+
+    <footer class="footer">
+      <button class="btn-generar" id="generar">
+        <span class="btn-generar__icon">↻</span>
+        <span>Nueva paleta</span>
+      </button>
+    </footer>
+
+    <div class="toast" id="toast">¡Copiado al portapapeles!</div>
+
+    <div class="modal" id="modal">
+      <div class="modal__card">
+        <button class="modal__cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+        <p class="modal__eyebrow">Copiar como</p>
+        <h2 class="modal__title" id="modalColor">#1A2B3C</h2>
+        <div class="modal__preview" id="modalPreview"></div>
+        <div class="modal__btns">
+          <button class="modal__btn" id="botonHexadecimal">HEX</button>
+          <button class="modal__btn modal__btn--alt" id="botonRgb">RGB</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
